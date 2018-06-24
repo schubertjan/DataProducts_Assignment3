@@ -1,0 +1,66 @@
+---
+title       : "Pitch Presentation"
+subtitle    : "Data Products Assignment 3"
+author      : "Jan Schubert"
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+github:
+    user: schuebrtjan
+    repo: DataProducts_Assignment3
+---
+
+## What does the app do?
+
+This app uses Google Search data to compare popularity of each cycling Grand Tour race (Tour de France, Vuelta a Espana and Giro d'Italia) around the world. 
+
+--- .class #id
+
+## What is a Grand Tour
+
+In case you are not a cycling fan and don't know what a Grand Tour is here is a definition from Wikipedia: 
+
+In road bicycle racing, a Grand Tour is one of the three major European professional cycling stage races: Tour de France, Giro d'Italia and Vuelta a España. Collectively they are termed the Grand Tours, and all three races are similar in format being multi-week races with daily stages. They have a special status in the UCI regulations: more points for the UCI World Tour are distributed in Grand Tours than in other races, and they are the only stage races allowed to last longer than 14 days.
+
+
+Source: Wikipedia https://en.wikipedia.org/wiki/Grand_Tour_(cycling) 
+
+---
+
+## What is Google Search Index
+
+Google provides aggregated search data in their public product called Google Trends. This provides relative frequency of a search term in a given country and worldwide.
+
+
+Source: Google Trends https://trends.google.com/trends/?geo=US 
+
+---
+
+## Example of the app (Tour de France)
+
+Tour de France is the biggest from the three Grand Tours and attracts interest from outside the traditional cycling regions (Europe and Columbia).
+
+```{r,results='asis',message=FALSE,echo=FALSE}
+library(googleVis)
+#load the data
+data <- read.csv("TDF.csv")
+colnames(data) <- c("country","index")
+#print the chart
+p1 <- gvisGeoChart(data,locationvar = "country",colorvar = "index")
+print(p1, tag = "chart")
+```
+
+---
+
+## Thanks!
+
+Explore how popular are other Grand Tours in your country in the app here  https://schubertjan.shinyapps.io/Assignment3/ 
+
+Don't forget to tune in to this year's Tour de France which starts on July 7 :)
+
+
+
+
+
