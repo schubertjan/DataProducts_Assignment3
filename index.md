@@ -1,6 +1,6 @@
 ---
 title       : "Pitch Presentation"
-subtitle    : "Data Products Assignment 3"
+subtitle    : "Data Products Assignment no. 3"
 author      : "Jan Schubert"
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
@@ -8,7 +8,7 @@ hitheme     : tomorrow      #
 widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 github:
-    user: schuebrtjan
+    user: schubertjan
     repo: DataProducts_Assignment3
 ---
 
@@ -43,14 +43,14 @@ Source: Google Trends https://trends.google.com/trends/?geo=US
 Tour de France is the biggest from the three Grand Tours and attracts interest from outside the traditional cycling regions (Europe and Columbia).
 
 <!-- GeoChart generated in R 3.4.3 by googleVis 0.6.2 package -->
-<!-- Sun Jun 24 17:00:52 2018 -->
+<!-- Sun Jun 24 17:15:09 2018 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataGeoChartID2bf81e6636e7 () {
+function gvisDataGeoChartID35e86a5c2182 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -1062,14 +1062,14 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartGeoChartID2bf81e6636e7() {
-var data = gvisDataGeoChartID2bf81e6636e7();
+function drawChartGeoChartID35e86a5c2182() {
+var data = gvisDataGeoChartID35e86a5c2182();
 var options = {};
 options["width"] = 556;
 options["height"] = 347;
 
     var chart = new google.visualization.GeoChart(
-    document.getElementById('GeoChartID2bf81e6636e7')
+    document.getElementById('GeoChartID35e86a5c2182')
     );
     chart.draw(data,options);
     
@@ -1093,9 +1093,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartGeoChartID2bf81e6636e7);
+callbacks.push(drawChartGeoChartID35e86a5c2182);
 })();
-function displayChartGeoChartID2bf81e6636e7() {
+function displayChartGeoChartID35e86a5c2182() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -1119,11 +1119,11 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID2bf81e6636e7"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID35e86a5c2182"></script>
  
 <!-- divChart -->
   
-<div id="GeoChartID2bf81e6636e7" 
+<div id="GeoChartID35e86a5c2182" 
   style="width: 556; height: 347;">
 </div>
 
